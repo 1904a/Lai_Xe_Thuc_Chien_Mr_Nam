@@ -11,13 +11,13 @@ import NavButton from "@/components/NavButton";
 const c1Course = {
   title: "HỌC BẰNG LÁI XE TẢI HẠNG C1",
   courseCode: "Khóa 01/2026",
-  price: "24.000.000 VNĐ",
+  price: "25.000.000 VNĐ",
   startDate: "25/06/2026",
   endDate: "25/10/2026",
   discount: "Giảm 200K – 500K khi đăng ký nhóm",
   limit: "15",
   deadline: "10/05/2026",
-  hotline: "0935 986 148",
+  hotline: "0917 329 245",
 };
 
 const benefitList = [
@@ -57,7 +57,7 @@ const headerData = {
 
 const leftData = {
   headerTitle: "HỌC PHÍ TRỌN GÓI HỌC LÁI XE C1\nTHỰC HÀNH 40 GIỜ",
-  price: "24.000.000 VNĐ",
+  price: "25.000.000 VNĐ",
   badgeText: "Chụp Lại Màn Hình Để Đối Chiếu Với Hợp Đồng",
   details: [
     "Thời gian đào tạo: <b>4 tháng</b>",
@@ -73,7 +73,7 @@ const leftData = {
 const rightData = {
   headerTitle: "HÌNH THỨC ĐÓNG HỌC PHÍ\nTIỀN MẶT HOẶC CHUYỂN KHOẢN",
   subHeader: "CHIA LÀM 2 LẦN ĐÓNG",
-  badgeText: "Gọi 0935 986 148 Để Nhận Ưu Đãi",
+  badgeText: "Gọi 0917 329 245 Để Nhận Ưu Đãi",
   steps: [
     {
       label: "Lần 1",
@@ -118,7 +118,7 @@ const locationData = {
   title: "ĐỊA ĐIỂM ĐĂNG KÝ HỒ SƠ",
   items: [
     { content: "Lái xe thực chiến Mr Năm", isBold: true },
-    { content: "Hotline/Zalo:", highlightText: "0935 986 148", isBold: true },
+    { content: "Hotline/Zalo:", highlightText: "0917 329 245", isBold: true },
     { content: "Đ/c: 357 Nguyễn Oanh, Phường Gò Vấp, Tp HCM" },
     { content: "Đây cũng là địa điểm học lý thuyết lái xe C1" },
     { content: "Nhận hồ sơ tại nhà hoặc nhận hồ sơ Online" },

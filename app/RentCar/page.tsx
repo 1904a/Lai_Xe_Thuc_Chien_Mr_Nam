@@ -177,7 +177,7 @@ export default function RentCar() {
             <li>
               <strong>Đăng ký:</strong> Gọi Hotline/Zalo
               <span className="text-red-600 font-bold text-lg ml-1">
-                091 22 666 11
+                0917 329 245
               </span>
               <br />
               (Nên đặt trước 1/2 ngày, liên tỉnh đặt trước 2 ngày).

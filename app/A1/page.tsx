@@ -4,7 +4,7 @@ import NavButton from "@/components/NavButton";
 const leftData = {
   headerTitle: "HỌC PHÍ TRỌN GÓI THI BẰNG LÁI XE MÁY A( DƯỚI 125 cm3)",
   price: "800.000 VNĐ",
-  badgeText: "HOTLINE: 1900 xxxx",
+  badgeText: "HOTLINE: 0917 329 245",
   details: [
     "Đã bao gồm:",
     "Phí hồ sơ đăng ký thi bằng lái",

@@ -14,7 +14,7 @@ const aCourse = {
   discount: "Giảm 100K khi đăng ký qua Hotline",
   limit: "Không giới hạn",
   deadline: "20/04/2026",
-  hotline: "0935 986 148",
+  hotline: "0917 329 245",
 };
 
 const benefitList = [
@@ -81,7 +81,7 @@ const locationData = {
   title: "ĐỊA ĐIỂM ĐĂNG KÝ",
   items: [
     { content: "Lái xe thực chiến Mr Năm", isBold: true },
-    { content: "Hotline/Zalo:", highlightText: "0935 986 148", isBold: true },
+    { content: "Hotline/Zalo:", highlightText: "0917 329 245", isBold: true },
     { content: "Đ/c: 357 Nguyễn Oanh, Phường 17, Gò Vấp, Tp HCM" },
     { content: "Văn phòng làm việc xuyên suốt cả tuần" },
     { content: "Hỗ trợ nộp hồ sơ Online cho học viên ở xa" },
@@ -248,7 +248,7 @@ export default function ACoursePage() {
                   Liên hệ để giữ chỗ ngay:
                 </p>
                 <span className="text-2xl font-bold text-red-600">
-                  0935 986 148
+                  0917 329 245
                 </span>
               </div>
             </div>

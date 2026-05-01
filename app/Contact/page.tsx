@@ -79,10 +79,10 @@ export default function Contact() {
               <p className="text-gray-800">
                 Facebook:{" "}
                 <a
-                  href="https://fb.com/truonglaikhoiviet"
+                  href="https://www.facebook.com/nam.nguyenvan.1042?locale=vi_VN"
                   className="text-red-600 underline"
                 >
-                  Fb.com/truonglaikhoiviet
+                  Fb.com/nguyenvannam
                 </a>
               </p>
             </div>
@@ -103,10 +103,10 @@ export default function Contact() {
               <p className="text-gray-800">
                 Web:{" "}
                 <a
-                  href="https://truonglaikhoiviet.edu.vn"
+                  href="https://dang-ky-tap-lai.vercel.app/"
                   className="text-red-600 underline"
                 >
-                  truonglaikhoiviet.edu.vn
+                  LaiXeThucChienMrNam
                 </a>
               </p>
             </div>

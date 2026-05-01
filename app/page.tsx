@@ -464,7 +464,7 @@ export default function Home() {
             />
             {/* Hotline chèn trên ảnh giống mẫu */}
             <div className="absolute bottom-0 left-0 right-0 bg-[#B22222]/90 text-white py-2 px-4 flex justify-around text-[10px] md:text-xs font-bold">
-              <span>Hotline: 0935 986 148 Thầy Năm</span>
+              <span>Hotline: 0917 329 245 Thầy Năm</span>
             </div>
           </div>
         </div>

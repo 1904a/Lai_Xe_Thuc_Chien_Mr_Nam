@@ -81,7 +81,7 @@ const leftData = {
 const rightData = {
   headerTitle: "HÌNH THỨC ĐÓNG HỌC PHÍ\nTIỀN MẶT HOẶC CHUYỂN KHOẢN",
   subHeader: "CHIA LÀM 2 LẦN ĐÓNG",
-  badgeText: "Gọi 0935 986 148 Để Nhận Ưu Đãi",
+  badgeText: "Gọi 0917 329 245 Để Nhận Ưu Đãi",
   steps: [
     {
       label: "Lần 1",
@@ -129,7 +129,7 @@ const locationData = {
   title: "ĐỊA ĐIỂM ĐĂNG KÝ HỒ SƠ",
   items: [
     { content: "Lái xe thực chiến Mr Năm", isBold: true },
-    { content: "Hotline/Zalo:", highlightText: "0935 986 148", isBold: true },
+    { content: "Hotline/Zalo:", highlightText: "0917 329 245", isBold: true },
     { content: "Đ/c: 357 Nguyễn Oanh, Phường Gò Vấp, Tp HCM" },
     { content: "Đây cũng là địa điểm đăng ký học lý thuyết" },
     { content: "Nhận hồ sơ tại nhà hoặc nhận hồ sơ Online" },
