@@ -45,7 +45,7 @@ export default function DrivingTuition() {
           Bổ túc tay lái cho người đã có bằng lái xe
         </h2>
         <p className="mb-3">
-          Những người đã có bằng lái xe cũng được trường dạy lái xe Khôi Việt
+          Những người đã có bằng lái xe cũng được Lái xe thực chiến Mr Năm
           chia ra làm 2 đối tượng:
         </p>
         <ul className="list-disc pl-6 space-y-3">
@@ -78,9 +78,11 @@ export default function DrivingTuition() {
           </h3>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse border border-gray-300 text-center">
-              <thead className="bg-blue-50 text-red-900">
+              <thead className="bg-blue-50 text-blue-900">
                 <tr>
-                  <th className="border border-gray-300 px-4 py-3">Loại Xe</th>
+                  <th className="border border-gray-300 px-4 py-3">
+                    Loại Xe
+                    </th>
                   <th className="border border-gray-300 px-4 py-3">
                     Xe số sàn
                   </th>

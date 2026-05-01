@@ -2,7 +2,7 @@ export default function RentCar() {
   return (
     <main className="container mx-auto px-4 py-8 max-w-4xl text-gray-800 leading-relaxed">
       {/* Tiêu đề chính */}
-      <h1 className="text-3xl md:text-4xl font-bold text-blue-800 mb-6 text-center uppercase">
+      <h1 className="text-3xl md:text-4xl font-bold text-red-800 mb-6 text-center uppercase">
         Thuê Xe Tập Lái Tại TPHCM
       </h1>
 
@@ -22,7 +22,7 @@ export default function RentCar() {
 
       {/* Đối tượng 1 */}
       <section className="mb-10">
-        <h2 className="text-2xl font-bold text-blue-700 mb-4 border-b pb-2">
+        <h2 className="text-2xl font-bold text-red-700 mb-4 border-b pb-2">
           Thuê xe tập lái cho người chưa có bằng lái
         </h2>
         <p className="mb-3">
@@ -51,11 +51,11 @@ export default function RentCar() {
 
       {/* Đối tượng 2 */}
       <section className="mb-10">
-        <h2 className="text-2xl font-bold text-blue-700 mb-4 border-b pb-2">
+        <h2 className="text-2xl font-bold text-red-700 mb-4 border-b pb-2">
           Thuê xe tập lái cho người đã có bằng lái xe
         </h2>
         <p className="mb-3">
-          Những người đã có bằng lái xe cũng được trường dạy lái xe Khôi Việt
+          Những người đã có bằng lái xe cũng được Lái xe thực chiến Mr Năm
           chia ra làm 2 đối tượng:
         </p>
         <ul className="list-disc pl-6 space-y-3">
@@ -76,7 +76,7 @@ export default function RentCar() {
 
       {/* Bảng giá */}
       <section className="mb-10">
-        <h2 className="text-2xl font-bold text-blue-700 mb-4 border-b pb-2">
+        <h2 className="text-2xl font-bold text-red-700 mb-4 border-b pb-2">
           Bảng giá thuê xe tập lái tại TPHCM
         </h2>
         <p className="mb-6">

@@ -1,28 +1,38 @@
+// app/layout.tsx
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import Navbar from "@/components/Header";
+import Footer from "@/components/Footer";
+import ContactWidget from "@/components/Widget";
 import "./globals.css";
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+const inter = Inter({ subsets: ["latin", "vietnamese"] });
+
+export const metadata: Metadata = {
+  title: "Lái xe thực chiến Mr Năm - Đào Tạo Bằng Lái Xe Máy, Ô Tô",
+  description: "Trung tâm đào tạo sát hạch lái xe uy tín các hạng A1, A2, B1, B2, C.",
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="vi">
-      <body>
-        {/**<nav className="sticky top-0 bg-white shadow-md z-50 py-4 px-6">
-          <div className="max-w-6xl mx-auto flex justify-between items-center">
-            <div className="hidden md:flex space-x-6 font-bold text-gray-700">
-              <a href="#" className="hover:text-red-600">TRANG CHỦ</a>
-              <a href="#" className="hover:text-red-600">KHÓA HỌC</a>
-              <a href="#" className="hover:text-red-600">SÂN TẬP</a>
-              <a href="#" className="hover:text-red-600">LIÊN HỆ</a>
-            </div>
-            <div className="text-red-600 font-bold">Hotline: 1900 xxxx</div>
-          </div>
-        </nav>*/}
+    
+    <html lang="vi" data-scroll-behavior="smooth" className="scroll-smooth">
+      <body className={`${inter.className} bg-white text-gray-900 antialiased`}>
+        {/* Header luôn cố định ở trên */}
+        <Navbar />
         
-        {children}
-        
-        {/**<footer className="bg-gray-900 text-white py-10 mt-10">
-          <div className="max-w-6xl mx-auto text-center">
-            <p>© 2024 Trung Tâm Lái Xe - Uy Tín & Chất Lượng</p>
-          </div>
-        </footer>*/}
+        {/* Phần nội dung chính của trang web */}
+        <main >
+          {children}
+        </main>
+
+        <ContactWidget />
+        {/* Footer ở cuối trang */}
+        <Footer />
       </body>
     </html>
   );
