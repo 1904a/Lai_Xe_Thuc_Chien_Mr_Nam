@@ -28,7 +28,7 @@ export default function RegisteredSuccessfully() {
             bạn trong hôm nay. Nếu bạn cần tư vấn gấp có thể gọi điện trực tiếp
             hoặc kết bạn zalo:
             <span className="text-red-600 font-bold ml-1 whitespace-nowrap">
-              Hotline – 0935 986 148 – Ms.Quyên
+              Hotline – 0935 986 148 – Thầy Năm
             </span>
           </p>
 
