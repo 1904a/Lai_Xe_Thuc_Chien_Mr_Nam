@@ -1,7 +1,7 @@
 // components/Navbar.tsx
 "use client";
 import Link from 'next/link';
-import { Home, ChevronDown, Calendar, Key, Newspaper, ArrowRightCircle } from 'lucide-react';
+import { Home, ChevronDown, Calendar, Key, ArrowRightCircle } from 'lucide-react';
 
 const Navbar = () => {
   const menuItems = [
@@ -36,15 +36,26 @@ const Navbar = () => {
     <nav className="bg-white shadow-md sticky top-0 z-50 font-sans">
       <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
         {/* Logo Section */}
-        <Link href="/" className="flex items-center space-x-2 group">
-          <div className="relative w-14 h-14 bg-red-700 rounded-full flex items-center justify-center border-2 border-yellow-500 shadow-inner">
-             <span className="text-white font-bold text-xl italic">KVI</span>
-          </div>
-          <div className="flex flex-col">
-            <span className="text-red-700 font-extrabold text-[11px] leading-tight tracking-tighter uppercase">Trường dạy lái xe</span>
-            <span className="text-red-800 font-black text-2xl leading-none tracking-wide">KHÔI VIỆT</span>
-          </div>
-        </Link>
+        <Link href="/IconCar.png" className="flex items-center space-x-3 group">
+  {/* Phần Logo: Thay hình tròn đỏ bằng ảnh con xe từ image_3ee6f4.jpg */}
+  <div className="relative w-16 h-16 flex items-center justify-center">
+    <img 
+      src="/images/IconCar.png" 
+      alt="Lái xe thực chiến Mr Năm"
+      className="w-full h-full object-contain"
+    />
+  </div>
+
+  {/* Phần Chữ: Giữ nguyên cấu trúc nhưng tinh chỉnh font để giống image_3efa74.png */}
+  <div className="flex flex-col justify-center">
+    <span className="text-red-700 font-extrabold text-[12px] leading-tight tracking-tight uppercase">
+      Lái Xe Thực Chiến
+    </span>
+    <span className="text-red-800 font-[900] text-2xl leading-none tracking-tighter uppercase">
+      Mr Năm
+    </span>
+  </div>
+</Link>
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center space-x-1">

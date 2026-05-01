@@ -6,7 +6,13 @@ import NavButton from "@/components/NavButton";
 export default function Home() {
   return (
     <main>
-      <div className="w-300 h-100 bg-amber-800 overflow-hidden border-2 border-gray-500 rounded-lg my-20 mx-auto"></div>
+      <div className="w-300 h-100 overflow-hidden border-2 border-gray-500 rounded-lg my-20 mx-auto">
+        <img
+            src="images/ngang.jpg"
+            alt="Sân tập lái xe"
+            className="w-full h-full object-cover"
+          />
+      </div>
 
       <div className="flex flex-col items-center text-center p-8">
         <div className="flex items-center gap-4 mb-2">
