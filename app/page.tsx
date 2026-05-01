@@ -194,7 +194,7 @@ export default function Home() {
       },
       {
         title: "HẠNG C1",
-        price: "24,000,000",
+        price: "25,000,000",
         detail: ["4 tháng thi", "Trọn gói đến lúc nhận bằng", "Tỷ lệ đậu cao"],
         link: "/C1", // Thêm đường dẫn cho card này
       },
