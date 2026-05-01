@@ -16,7 +16,7 @@ export default function RegisteredSuccessfully() {
         </nav>
       </div>
 
-      <div className="w-full h-[400px] bg-[#f7c35f] flex flex-col items-center justify-center text-center px-6">
+      <div className="w-full h-[400px] bg-[#f7c35f] flex flex-col items-center justify-center text-center px-6 mt-20 mb-20">
         {/* Main Header */}
         <h2 className="text-[#a1331a] text-2xl md:text-3xl font-bold uppercase mb-4">
           Cảm ơn bạn đã đăng ký tư vấn học lái xe
