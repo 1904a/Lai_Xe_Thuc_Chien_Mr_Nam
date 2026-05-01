@@ -15,7 +15,7 @@ const Navbar = () => {
         { name: "Học lái xe ô tô B( Số sàn)", url: "/B-manual" },
         { name: "Học bằng lái xe tải hạng C1", url: "/C1" },
         { name: "Học bằng lái xe máy A1", url: "/A1" },
-        { name: "Thi bằng lái xe mô tô hạng A", url: "/A2" }
+        { name: "Thi bằng lái xe mô tô hạng A", url: "/A" }
       ]
     },
     { name: "LỊCH THI", icon: <Calendar size={18} />, url: "/Schedule" },

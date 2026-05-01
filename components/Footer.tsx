@@ -8,7 +8,7 @@ const Footer = () => {
     { name: "Học lái xe ô tô B( Số sàn)", url: "/B-manual" },
     { name: "Học bằng lái xe tải hạng C1", url: "/C1" },
     { name: "Học bằng lái xe máy A1", url: "/A1" },
-    { name: "Thi bằng lái xe mô tô hạng A", url: "/A2" },
+    { name: "Thi bằng lái xe mô tô hạng A", url: "/A" },
     { name: "Bổ túc tay lái", url: "/DrivingTuition" }
   ];
 
