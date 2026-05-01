@@ -36,7 +36,7 @@ const Navbar = () => {
     <nav className="bg-white shadow-md sticky top-0 z-50 font-sans">
       <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
         {/* Logo Section */}
-        <Link href="/IconCar.png" className="flex items-center space-x-3 group">
+        <Link href="/" className="flex items-center space-x-3 group">
   {/* Phần Logo: Thay hình tròn đỏ bằng ảnh con xe từ image_3ee6f4.jpg */}
   <div className="relative w-16 h-16 flex items-center justify-center">
     <img 
