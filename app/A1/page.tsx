@@ -1,5 +1,6 @@
 import PriceDetailCard from "@/components/PriceDetailCard";
 import NavButton from "@/components/NavButton";
+import ContactForm from "@/components/ContactForm";
 
 const leftData = {
   headerTitle: "HỌC PHÍ TRỌN GÓI THI BẰNG LÁI XE MÁY A( DƯỚI 125 cm3)",
@@ -57,7 +58,7 @@ export default function A1() {
               href="page.tsx"
               className="text-red-600 font-semibold underline decoration-red-600 underline-offset-2 hover:text-red-700 transition-colors"
             >
-              Lái xe thực chiến Mr Năm
+              Đào tạo lái xe khôi việt - Thầy Năm 
             </a>{" "}
             và cầm trên tay tấm bằng thật, chất lượng và tự tin điều khiển xe
             máy ra đường.
@@ -101,28 +102,7 @@ export default function A1() {
                   Nhân viên sẽ liên hệ trong 15 phút
                 </p>
 
-                <form className="space-y-5 text-left">
-                  <input
-                    type="text"
-                    placeholder="Họ và tên"
-                    className="w-full px-6 py-4 rounded-xl border-none outline-none text-slate-900 bg-white text-lg shadow-inner"
-                  />
-                  <input
-                    type="tel"
-                    placeholder="Số điện thoại"
-                    className="w-full px-6 py-4 rounded-xl border-none outline-none text-slate-900 bg-white text-lg shadow-inner"
-                  />
-                  <div className="w-full px-6 py-4 rounded-xl bg-white/90 text-slate-500 text-lg font-medium shadow-inner">
-                    Hạng bằng A1
-                  </div>
-                  <div className="pt-4">
-                    <NavButton
-                      className="w-full py-5 bg-[#B22222] border border-white/30 hover:bg-white hover:text-[#B22222] text-white font-black rounded-xl transition-all duration-300 uppercase shadow-xl text-xl active:scale-95"
-                      dest="/RegisteredSuccessfully"
-                      label="Đăng ký ngay"
-                    />
-                  </div>
-                </form>
+                <ContactForm courseName="A1" showContentInput={true} />
                 <p className="mt-8 text-white/70 text-sm font-light italic">
                   ✓ Miễn phí tư vấn & giữ suất học • Không spam
                 </p>

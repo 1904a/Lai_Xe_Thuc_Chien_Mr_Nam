@@ -9,7 +9,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin", "vietnamese"] });
 
 export const metadata: Metadata = {
-  title: "Lái xe thực chiến Mr Năm - Đào Tạo Bằng Lái Xe Máy, Ô Tô",
+  title: "Đào tạo lái xe khôi việt - Thầy Năm  - Đào Tạo Bằng Lái Xe Máy, Ô Tô",
   description: "Trung tâm đào tạo sát hạch lái xe uy tín các hạng A1, A2, B1, B2, C.",
 };
 

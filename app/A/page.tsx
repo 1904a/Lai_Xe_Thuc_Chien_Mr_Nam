@@ -5,6 +5,7 @@ import PriceDetailCard from "@/components/PriceDetailCard";
 import RegistrationInfoCard from "@/components/RegistrationInfoCard";
 import TrainingStepCard from "@/components/TrainingStepCard";
 import NavButton from "@/components/NavButton";
+import ContactForm from "@/components/ContactForm";
 const aCourse = {
   title: "THI BẰNG LÁI XE MÔ TÔ HẠNG A (XE TRÊN 125 CM³)",
   courseCode: "Đợt 3 - 2026",
@@ -80,7 +81,7 @@ const dossierData = {
 const locationData = {
   title: "ĐỊA ĐIỂM ĐĂNG KÝ",
   items: [
-    { content: "Lái xe thực chiến Mr Năm", isBold: true },
+    { content: "Đào tạo lái xe khôi việt - Thầy Năm ", isBold: true },
     { content: "Hotline/Zalo:", highlightText: "0917 329 245", isBold: true },
     { content: "Đ/c: 357 Nguyễn Oanh, Phường 17, Gò Vấp, Tp HCM" },
     { content: "Văn phòng làm việc xuyên suốt cả tuần" },
@@ -171,41 +172,7 @@ export default function ACoursePage() {
                   Nhân viên sẽ liên hệ trong 15 phút
                 </p>
 
-                <form className="space-y-5 text-left">
-                  {/* Box Họ và tên */}
-                  <div>
-                    <input
-                      type="text"
-                      placeholder="Họ và tên"
-                      className="w-full px-6 py-4 rounded-xl border-none focus:ring-2 focus:ring-yellow-400 outline-none text-slate-900 bg-white text-lg transition-all shadow-inner"
-                    />
-                  </div>
-
-                  {/* Box Số điện thoại */}
-                  <div>
-                    <input
-                      type="tel"
-                      placeholder="Số điện thoại"
-                      className="w-full px-6 py-4 rounded-xl border-none focus:ring-2 focus:ring-yellow-400 outline-none text-slate-900 bg-white text-lg transition-all shadow-inner"
-                    />
-                  </div>
-
-                  {/* Nội dung cố định (giữ nguyên logic bài trước) */}
-                  <div>
-                    <div className="w-full px-6 py-4 rounded-xl border-none bg-white/90 text-slate-500 text-lg font-medium shadow-inner cursor-not-allowed">
-                      BÀNG LÁI XE HẠNG A
-                    </div>
-                  </div>
-
-                  {/* NavButton Component - Logic dest luôn là homepage như yêu cầu trước */}
-                  <div className="pt-4">
-                    <NavButton
-                      className="w-full py-5 bg-[#B22222] border border-white/30 hover:bg-white hover:text-[#B22222] text-white font-black rounded-xl transition-all duration-300 uppercase shadow-xl text-xl active:scale-95"
-                      dest="/RegisteredSuccessfully"
-                      label="Đăng ký ngay"
-                    />
-                  </div>
-                </form>
+                <ContactForm courseName="A" showContentInput={true} />
 
                 <p className="mt-8 text-white/70 text-sm font-light italic">
                   ✓ Miễn phí tư vấn & giữ suất học • Không spam

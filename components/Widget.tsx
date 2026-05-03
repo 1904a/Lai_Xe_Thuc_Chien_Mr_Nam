@@ -8,7 +8,7 @@ export default function ContactWidget() {
       
       {/* Nút Messenger (Xanh sky) */}
       <a
-        href="https://www.facebook.com/nam.nguyenvan.1042?locale=vi_VN" // Vẫn giữ link m.me để khách ấn vào là chat được luôn
+        href="https://www.facebook.com/profile.php?id=100078319064792" // Vẫn giữ link m.me để khách ấn vào là chat được luôn
         target="_blank"
         rel="noopener noreferrer"
         className="group w-16 h-16 rounded-full flex items-center justify-center bg-blue-50/80 hover:bg-blue-100 transition-all duration-300 shadow-sm"

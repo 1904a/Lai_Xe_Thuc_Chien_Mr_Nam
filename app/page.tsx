@@ -2,16 +2,17 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay, EffectFade } from "swiper/modules";
 import NavButton from "@/components/NavButton";
+import GeneralContactForm from "@/components/GeneralContactForm";
 
 export default function Home() {
   return (
     <main>
       <div className="w-300 h-100 overflow-hidden border-2 border-gray-500 rounded-lg my-20 mx-auto">
         <img
-            src="images/ngang.jpg"
-            alt="Sân tập lái xe"
-            className="w-full h-full object-cover"
-          />
+          src="images/banner.jpg"
+          alt="Sân tập lái xe"
+          className="w-full h-full object-cover"
+        />
       </div>
 
       <div className="flex flex-col items-center text-center p-8">
@@ -24,7 +25,7 @@ export default function Home() {
         </div>
         <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
           Cam Kết Đào Tạo Tại{" "}
-          <span className="text-red-600">Lái xe thực chiến Mr Năm</span>
+          <span className="text-red-600">Đào tạo lái xe khôi việt - Thầy Năm </span>
         </h2>
         <div className="w-64 h-1 bg-red-100 rounded-full mb-6 flex overflow-hidden">
           <div className="w-1/3 bg-red-600 h-full mx-auto"></div>
@@ -39,22 +40,22 @@ export default function Home() {
       <div className="max-w-[1230px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 mt-20 py-10 px-4">
         {[
           {
-            icon: "images/icon.jpg", // Thay đổi tên file tương ứng
+            icon: "images/tieuchi1.jpg", // Thay đổi tên file tương ứng
             title: "CHẤT LƯỢNG HÀNG ĐẦU",
             desc: "Đảm bảo học viên khi nhận bằng lái xe có đủ kỹ năng xử lý tình huống và tự tin lái xe trên đường giao thông.",
           },
           {
-            icon: "images/icon.jpg",
+            icon: "images/tieuchi2.jpg",
             title: "GIẢNG VIÊN TẬN TÂM",
             desc: "Đội ngũ giảng viên có nhiều kinh nghiệm giảng dạy lâu năm, sẽ truyền đạt những kiến thức thực tế và dễ hiểu, giúp học viên có thể phán đoán và cách xử lý các tình huống khi tham gia giao thông.",
           },
           {
-            icon: "images/icon.jpg",
+            icon: "images/tieuchi3.jpg",
             title: "CHI PHÍ MINH BẠCH",
             desc: "Có hợp đồng rõ ràng, không phát sinh chi phí trong quá trình đào tạo đến khi nhận bằng.",
           },
           {
-            icon: "images/icon.jpg",
+            icon: "images/tieuchi4.jpg",
             title: "TỶ LỆ THI ĐẠT ĐỨNG ĐẦU",
             desc: "Học viên sẽ được học những kỹ năng và mẹo thi lý thuyết, bài sa hình và đường trường, giúp học viên dễ dàng vượt qua kỳ thi sát hạch.",
           },
@@ -87,7 +88,7 @@ export default function Home() {
         {/* Khối ảnh nền bên phải */}
         <div className="absolute top-0 right-0 w-[760px] h-[434px] overflow-hidden rounded-lg shadow-lg">
           <img
-            src="images/ngang.jpg"
+            src="images/card1.jpg"
             alt="Sân tập lái xe"
             className="w-full h-full object-cover"
           />
@@ -98,7 +99,7 @@ export default function Home() {
         {/* Khối nội dung bên trái */}
         <div className="absolute left-0 top-[63px] w-[480px] bg-white p-10 rounded-xl shadow-2xl border border-gray-100 flex flex-col justify-center z-10">
           <h2 className="text-[#B22222] text-3xl font-extrabold leading-tight uppercase mb-2">
-            Lái xe thực chiến Mr Năm
+            Đào tạo lái xe khôi việt - Thầy Năm 
           </h2>
 
           <p className="text-[#B22222] font-semibold text-sm tracking-widest uppercase mb-6">
@@ -110,7 +111,6 @@ export default function Home() {
             đời mới. Cam kết đào tạo chuyên nghiệp, chi phí minh bạch và tỷ lệ
             thi đạt cao.
           </p>
-
         </div>
       </div>
 
@@ -134,7 +134,8 @@ export default function Home() {
             <SwiperSlide key={item} className="flex justify-center">
               <div className="w-full h-[280px] rounded-2xl overflow-hidden shadow-md">
                 <img
-                  src="images/ngang.jpg"
+                  // Sử dụng Template Literals để thay đổi tên file theo biến item
+                  src={`images/slider${item}.jpg`}
                   alt={`Slide ${item}`}
                   className="w-full h-full object-cover"
                 />
@@ -179,119 +180,127 @@ export default function Home() {
         </div>
 
         {/* SECTION 1: Ô TÔ 4 BÁNH */}
-<div className="mb-16">
-  <h3 className="text-2xl font-bold uppercase mb-10 tracking-widest">
-    HỌC LÁI XE Ô TÔ 4 BÁNH
-  </h3>
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold uppercase mb-10 tracking-widest">
+            HỌC LÁI XE Ô TÔ 4 BÁNH
+          </h3>
 
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
-    {[
-      {
-        title: "HẠNG B (SỐ TỰ ĐỘNG)",
-        price: "20,000,000",
-        detail: ["2,5 tháng thi", "Học phí trọn gói", "Chia nhiều đợt"],
-        link: "/B-automatic", // Thêm đường dẫn cho card này
-      },
-      {
-        title: "HẠNG B (SỐ SÀN)",
-        price: "20,000,000",
-        detail: ["3,5 tháng thi", "Minh bạch chi phí", "Lịch linh động"],
-        link: "/B-manual", // Thêm đường dẫn cho card này
-      },
-      {
-        title: "HẠNG C1",
-        price: "25,000,000",
-        detail: ["4 tháng thi", "Trọn gói đến lúc nhận bằng", "Tỷ lệ đậu cao"],
-        link: "/C1", // Thêm đường dẫn cho card này
-      },
-    ].map((card, idx) => (
-      // Đổi div thành thẻ a và thêm href
-      <a
-        key={idx}
-        href={card.link}
-        className="bg-white rounded-3xl p-8 text-slate-900 flex flex-col items-center shadow-xl hover:scale-105 transition-transform cursor-pointer block"
-      >
-        <img
-          src="images/icon.jpg"
-          alt="car"
-          className="w-48 h-32 object-contain mb-6"
-        />
-        <h4 className="text-[#B22222] font-bold text-lg mb-2">
-          {card.title}
-        </h4>
-        <p className="text-[#B22222] font-black text-2xl mb-6">
-          {card.price}
-        </p>
-        <ul className="text-left space-y-3 mb-8 w-full px-4">
-          {card.detail.map((item, i) => (
-            <li key={i} className="text-sm flex items-center gap-2">
-              <span className="text-[#B22222]">✓</span> {item}
-            </li>
-          ))}
-        </ul>
-      </a>
-    ))}
-  </div>
-</div>
-
-{/* SECTION 2: XE 2 BÁNH */}
-<div>
-  <h3 className="text-2xl font-bold uppercase mb-10 tracking-widest">
-    HỌC LÁI XE 2 BÁNH
-  </h3>
-
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[900px] mx-auto px-4">
-    {[
-      {
-        title: "BẰNG A1",
-        price: "550,000",
-        oldPrice: null,
-        detail: ["Đậu 100%", "Không phát sinh", "Thi hàng tháng"],
-        link: "/A1", // Thêm đường dẫn cho card này
-      },
-      {
-        title: "BẰNG A",
-        price: "1,750,000",
-        oldPrice: "2,000,000",
-        detail: ["Đậu 100%", "Chọn xe thi", "Miễn phí hồ sơ"],
-        link: "/A", // Thêm đường dẫn cho card này
-      },
-    ].map((card, idx) => (
-      // Đổi div thành thẻ a và thêm href
-      <a
-        key={idx}
-        href={card.link}
-        className="bg-white rounded-3xl p-8 text-slate-900 flex flex-col items-center shadow-xl hover:scale-105 transition-transform cursor-pointer block"
-      >
-        <img
-          src="images/icon.jpg"
-          alt="bike"
-          className="w-40 h-32 object-contain mb-6"
-        />
-        <h4 className="text-[#B22222] font-bold text-lg mb-2">
-          {card.title}
-        </h4>
-        <div className="flex items-center gap-2 mb-6">
-          {card.oldPrice && (
-            <span className="text-gray-400 line-through text-sm">
-              {card.oldPrice}
-            </span>
-          )}
-          <p className="text-[#B22222] font-black text-2xl">
-            {card.price}
-          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+            {[
+              {
+                title: "HẠNG B (SỐ TỰ ĐỘNG)",
+                price: "20,000,000",
+                detail: ["2,5 tháng thi", "Học phí trọn gói", "Chia nhiều đợt"],
+                link: "/B-automatic", // Thêm đường dẫn cho card này
+              },
+              {
+                title: "HẠNG B (SỐ SÀN)",
+                price: "20,000,000",
+                detail: [
+                  "3,5 tháng thi",
+                  "Minh bạch chi phí",
+                  "Lịch linh động",
+                ],
+                link: "/B-manual", // Thêm đường dẫn cho card này
+              },
+              {
+                title: "HẠNG C1",
+                price: "25,000,000",
+                detail: [
+                  "4 tháng thi",
+                  "Trọn gói đến lúc nhận bằng",
+                  "Tỷ lệ đậu cao",
+                ],
+                link: "/C1", // Thêm đường dẫn cho card này
+              },
+            ].map((card, idx) => (
+              <a
+                key={idx}
+                href={card.link}
+                className="bg-white rounded-3xl p-8 text-slate-900 flex flex-col items-center shadow-xl hover:scale-105 transition-transform cursor-pointer block"
+              >
+                <img
+                  // Kết quả: card1.png, card2.png, card3.png
+                  src={`images/card${idx + 1}.png`}
+                  alt="car"
+                  className="w-48 h-32 object-contain mb-6"
+                />
+                <h4 className="text-[#B22222] font-bold text-lg mb-2">
+                  {card.title}
+                </h4>
+                <p className="text-[#B22222] font-black text-2xl mb-6">
+                  {card.price}
+                </p>
+                <ul className="text-left space-y-3 mb-8 w-full px-4">
+                  {card.detail.map((item, i) => (
+                    <li key={i} className="text-sm flex items-center gap-2">
+                      <span className="text-[#B22222]">✓</span> {item}
+                    </li>
+                  ))}
+                </ul>
+              </a>
+            ))}
+          </div>
         </div>
-        <ul className="text-left space-y-3 mb-8 w-full px-4">
-          {card.detail.map((item, i) => (
-            <li key={i} className="text-sm flex items-center gap-2">
-              <span className="text-[#B22222]">✓</span> {item}
-            </li>
-          ))}
-        </ul>
-      </a>
-    ))}
-  </div>
-</div>
+
+        {/* SECTION 2: XE 2 BÁNH */}
+        <div>
+          <h3 className="text-2xl font-bold uppercase mb-10 tracking-widest">
+            HỌC LÁI XE 2 BÁNH
+          </h3>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[900px] mx-auto px-4">
+            {[
+              {
+                title: "BẰNG A1",
+                price: "550,000",
+                oldPrice: null,
+                detail: ["Đậu 100%", "Không phát sinh", "Thi hàng tháng"],
+                link: "/A1", // Thêm đường dẫn cho card này
+              },
+              {
+                title: "BẰNG A",
+                price: "1,750,000",
+                oldPrice: "2,000,000",
+                detail: ["Đậu 100%", "Chọn xe thi", "Miễn phí hồ sơ"],
+                link: "/A", // Thêm đường dẫn cho card này
+              },
+            ].map((card, idx) => (
+              <a
+                key={idx}
+                href={card.link}
+                className="bg-white rounded-3xl p-8 text-slate-900 flex flex-col items-center shadow-xl hover:scale-105 transition-transform cursor-pointer block"
+              >
+                <img
+                  // Kết quả: card4.png, card5.png
+                  src={`images/card${idx + 4}.png`}
+                  alt="bike"
+                  className="w-40 h-32 object-contain mb-6"
+                />
+                <h4 className="text-[#B22222] font-bold text-lg mb-2">
+                  {card.title}
+                </h4>
+                <div className="flex items-center gap-2 mb-6">
+                  {card.oldPrice && (
+                    <span className="text-gray-400 line-through text-sm">
+                      {card.oldPrice}
+                    </span>
+                  )}
+                  <p className="text-[#B22222] font-black text-2xl">
+                    {card.price}
+                  </p>
+                </div>
+                <ul className="text-left space-y-3 mb-8 w-full px-4">
+                  {card.detail.map((item, i) => (
+                    <li key={i} className="text-sm flex items-center gap-2">
+                      <span className="text-[#B22222]">✓</span> {item}
+                    </li>
+                  ))}
+                </ul>
+              </a>
+            ))}
+          </div>
+        </div>
       </div>
 
       <div className="max-w-[1200px] mx-auto mt-20 mb-35 text-center font-sans">
@@ -323,10 +332,10 @@ export default function Home() {
       <div className="max-w-[1200px] mx-auto mb-35 px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            { step: "1", title: "ĐĂNG KÝ & TƯ VẤN", img: "images/ngang.jpg" },
-            { step: "2", title: "LÀM HỒ SƠ", img: "images/ngang.jpg" },
-            { step: "3", title: "HỌC & THỰC HÀNH", img: "images/ngang.jpg" },
-            { step: "4", title: "THI & NHẬN BẰNG", img: "images/ngang.jpg" },
+            { step: "1", title: "ĐĂNG KÝ & TƯ VẤN", img: "images/card1.jpg" },
+            { step: "2", title: "LÀM HỒ SƠ", img: "images/card2.jpg" },
+            { step: "3", title: "HỌC & THỰC HÀNH", img: "images/card3.jpg" },
+            { step: "4", title: "THI & NHẬN BẰNG", img: "images/card4.jpg" },
           ].map((item, index) => (
             <div
               key={index}
@@ -387,7 +396,7 @@ export default function Home() {
             {/* Ảnh Toàn Cảnh Sân Sát Hạch */}
             <div className="relative w-full h-[220px] rounded-2xl overflow-hidden group shadow-md">
               <img
-                src="images/ngang.jpg"
+                src="images/card5.jpg"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 alt="Toàn cảnh sân sát hạch"
               />
@@ -402,7 +411,7 @@ export default function Home() {
             <div className="flex gap-5 h-[220px]">
               <div className="relative w-1/2 h-full rounded-2xl overflow-hidden group shadow-md">
                 <img
-                  src="images/ngang.jpg"
+                  src="images/card6.jpg"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   alt="Hội đồng sát hạch"
                 />
@@ -415,7 +424,7 @@ export default function Home() {
 
               <div className="relative w-1/2 h-full rounded-2xl overflow-hidden group shadow-md">
                 <img
-                  src="images/ngang.jpg"
+                  src="images/card4.jpg"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   alt="Sân sát hạch mô tô"
                 />
@@ -431,11 +440,15 @@ export default function Home() {
           {/* CỘT PHẢI (Dọc - chứa 1 ảnh cao bằng cả 2 hàng bên trái) */}
           <div className="w-full md:w-[40%]">
             <div className="relative w-full h-[460px] rounded-2xl overflow-hidden group shadow-md">
-              <img
-                src="images/ngang.jpg"
+              <video
+                src="video/video1.mp4" // Thay đường dẫn video của bạn vào đây
+                autoPlay
+                loop
+                muted
+                playsInline
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                alt="Tổ chức kỳ sát hạch"
               />
+              {/* Phần Overlay chữ giữ nguyên */}
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                 <span className="text-white text-sm font-medium">
                   Tổ Chức Kỳ Sát Hạch
@@ -464,12 +477,12 @@ export default function Home() {
           {/* Ảnh Banner nhỏ bên dưới */}
           <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
             <img
-              src="images/ngang.jpg"
+              src="images/card7.png"
               alt="Trường đào tạo lái xe Khôi Việt"
               className="w-full h-auto object-cover"
             />
             {/* Hotline chèn trên ảnh giống mẫu */}
-            <div className="absolute bottom-0 left-0 right-0 bg-[#B22222]/90 text-white py-2 px-4 flex justify-around text-[10px] md:text-xs font-bold">
+            <div className="absolute bottom-4 left-4 right-4 border border-white/60 bg-black/20 backdrop-blur-sm text-white py-3 px-4 flex justify-center  md:text-xs font-bold rounded-xl">
               <span>Hotline: 0917 329 245 Thầy Năm</span>
             </div>
           </div>
@@ -488,43 +501,7 @@ export default function Home() {
               Nhân viên sẽ liên hệ trong 15 phút
             </p>
 
-            <form className="space-y-4 text-left">
-              <div>
-                <input
-                  type="text"
-                  placeholder="Họ và tên"
-                  className="w-full px-5 py-4 rounded-xl border-none focus:ring-2 focus:ring-yellow-400 outline-none text-slate-900 bg-white"
-                />
-              </div>
-              <div>
-                <input
-                  type="tel"
-                  placeholder="Số điện thoại"
-                  className="w-full px-5 py-4 rounded-xl border-none focus:ring-2 focus:ring-yellow-400 outline-none text-slate-900 bg-white"
-                />
-              </div>
-              <div>
-                <select className="w-full px-5 py-4 rounded-xl border-none focus:ring-2 focus:ring-yellow-400 outline-none text-slate-500 appearance-none bg-white">
-                  <option value="">Chọn khóa học</option>
-                  <option value="b1">Bằng B1 (Số tự động)</option>
-                  <option value="b2">Bằng B2 (Số sàn)</option>
-                  <option value="c">Bằng C1</option>
-                  <option value="a1">Bằng A1 / A</option>
-                </select>
-              </div>
-              <div>
-                <textarea
-                  placeholder="Nội dung"
-                  rows={4}
-                  className="w-full px-5 py-4 rounded-xl border-none focus:ring-2 focus:ring-yellow-400 outline-none text-slate-900 resize-none bg-white"
-                ></textarea>
-              </div>
-              <NavButton
-                className="w-full py-4 bg-[#B22222] border border-white/20 hover:bg-white hover:text-[#B22222] text-white font-black rounded-xl transition-all duration-300 uppercase shadow-lg"
-                dest="/RegisteredSuccessfully"
-                label="Đăng ký ngay"
-              />
-            </form>
+            <GeneralContactForm />
 
             <p className="mt-6 text-white/70 text-xs font-light italic">
               ✓ Miễn phí tư vấn & giữ suất học • Không spam

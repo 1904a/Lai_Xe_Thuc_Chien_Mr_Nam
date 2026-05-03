@@ -18,7 +18,7 @@ export default function Contact() {
           {/* Tên trường */}
           <div className="py-3 border-b border-blue-700 text-center">
             <h2 className="text-xl font-bold text-blue-700 uppercase">
-              Lái xe thực chiến Mr Năm
+              Đào tạo lái xe khôi việt - Thầy Năm 
             </h2>
           </div>
 
@@ -79,10 +79,10 @@ export default function Contact() {
               <p className="text-gray-800">
                 Facebook:{" "}
                 <a
-                  href="https://www.facebook.com/nam.nguyenvan.1042?locale=vi_VN"
+                  href="https://www.facebook.com/profile.php?id=100078319064792"
                   className="text-red-600 underline"
                 >
-                  Fb.com/nguyenvannam
+                  Fb.com/Đào tạo lái xe ô tô .thầy năm
                 </a>
               </p>
             </div>
@@ -103,10 +103,10 @@ export default function Contact() {
               <p className="text-gray-800">
                 Web:{" "}
                 <a
-                  href="https://dang-ky-tap-lai.vercel.app/"
+                  href="/"
                   className="text-red-600 underline"
                 >
-                  LaiXeThucChienMrNam
+                  Đào tạo lái xe khôi việt - Thầy Năm 
                 </a>
               </p>
             </div>

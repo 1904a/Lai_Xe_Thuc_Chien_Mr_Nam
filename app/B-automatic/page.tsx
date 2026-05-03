@@ -7,6 +7,7 @@ import RegistrationInfoCard from "@/components/RegistrationInfoCard";
 import LocationList from "@/components/Location";
 import TrainingStepCard from "@/components/TrainingStepCard";
 import NavButton from "@/components/NavButton";
+import ContactForm from "@/components/ContactForm";
 
 const b1Course = {
   title: "HỌC LÁI XE Ô TÔ B(SỐ TỰ ĐỘNG)",
@@ -118,7 +119,7 @@ const dossierData = {
 const locationData = {
   title: "ĐỊA ĐIỂM ĐĂNG KÝ HỒ SƠ",
   items: [
-    { content: "Lái xe thực chiến Mr Năm", isBold: true },
+    { content: "Đào tạo lái xe khôi việt - Thầy Năm ", isBold: true },
     { content: "Hotline/Zalo:", highlightText: "0917 329 245", isBold: true },
     { content: "Đ/c: 357 Nguyễn Oanh, Phường Gò Vấp, Tp HCM" },
     { content: "Đây cũng là địa điểm đăng ký học lý thuyết" },
@@ -229,41 +230,7 @@ export default function Bautomatic() {
                   Nhân viên sẽ liên hệ trong 15 phút
                 </p>
 
-                <form className="space-y-5 text-left">
-                  {/* Box Họ và tên */}
-                  <div>
-                    <input
-                      type="text"
-                      placeholder="Họ và tên"
-                      className="w-full px-6 py-4 rounded-xl border-none focus:ring-2 focus:ring-yellow-400 outline-none text-slate-900 bg-white text-lg transition-all shadow-inner"
-                    />
-                  </div>
-
-                  {/* Box Số điện thoại */}
-                  <div>
-                    <input
-                      type="tel"
-                      placeholder="Số điện thoại"
-                      className="w-full px-6 py-4 rounded-xl border-none focus:ring-2 focus:ring-yellow-400 outline-none text-slate-900 bg-white text-lg transition-all shadow-inner"
-                    />
-                  </div>
-
-                  {/* Nội dung cố định (giữ nguyên logic bài trước) */}
-                  <div>
-                    <div className="w-full px-6 py-4 rounded-xl border-none bg-white/90 text-slate-500 text-lg font-medium shadow-inner cursor-not-allowed">
-                      Bằng LÁI XE Ô TÔ B(SỐ TỰ ĐỘNG)
-                    </div>
-                  </div>
-
-                  {/* NavButton Component - Logic dest luôn là homepage như yêu cầu trước */}
-                  <div className="pt-4">
-                    <NavButton
-                      className="w-full py-5 bg-[#B22222] border border-white/30 hover:bg-white hover:text-[#B22222] text-white font-black rounded-xl transition-all duration-300 uppercase shadow-xl text-xl active:scale-95"
-                      dest="/RegisteredSuccessfully"
-                      label="Đăng ký ngay"
-                    />
-                  </div>
-                </form>
+                <ContactForm courseName="B( Số Tự Động)" showContentInput={true} />
 
                 <p className="mt-8 text-white/70 text-sm font-light italic">
                   ✓ Miễn phí tư vấn & giữ suất học • Không spam
@@ -362,12 +329,12 @@ export default function Bautomatic() {
       <div className="w-[1230px] h-[975px] mx-auto font-sans mt-5">
         <div className="w-full h-[140px] flex flex-col items-center justify-center text-center px-4">
           <h2 className="text-[#cc1d1d] text-[28px] font-bold uppercase mb-4">
-            HÌNH ẢNH SÂN TẬP SA HÌNH Lái xe thực chiến Mr Năm
+            HÌNH ẢNH SÂN TẬP SA HÌNH Đào tạo lái xe khôi việt - Thầy Năm 
           </h2>
           <p className="text-gray-800 text-[16px] max-w-[1000px] leading-relaxed">
             Dưới đây là một số hình ảnh về sân tập sa hình của{" "}
             <span className="text-red-600 font-bold underline">
-              Lái xe thực chiến Mr Năm
+              Đào tạo lái xe khôi việt - Thầy Năm 
             </span>
             . Sân tập đạt chuẩn theo yêu cầu của sở Xây dựng TPHCM.
           </p>

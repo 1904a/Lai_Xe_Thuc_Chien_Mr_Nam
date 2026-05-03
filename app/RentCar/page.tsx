@@ -19,7 +19,13 @@ export default function RentCar() {
           sẽ có các hướng dẫn bổ túc khác nhau.
         </p>
       </section>
-
+      <div className="w-full h-[400px] bg-gray-200 mb-10">
+  <img
+    src="/images/ThueXeTapLai.jpg"
+    alt="Thuê xe tập lái tại TPHCM"
+    className="w-full h-full object-cover rounded-lg border border-gray-300"
+  />
+</div>
       {/* Đối tượng 1 */}
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-red-700 mb-4 border-b pb-2">
@@ -55,7 +61,7 @@ export default function RentCar() {
           Thuê xe tập lái cho người đã có bằng lái xe
         </h2>
         <p className="mb-3">
-          Những người đã có bằng lái xe cũng được Lái xe thực chiến Mr Năm
+          Những người đã có bằng lái xe cũng được Đào tạo lái xe khôi việt - Thầy Năm 
           chia ra làm 2 đối tượng:
         </p>
         <ul className="list-disc pl-6 space-y-3">

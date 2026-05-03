@@ -41,7 +41,7 @@ const Navbar = () => {
   <div className="relative w-16 h-16 flex items-center justify-center">
     <img 
       src="/images/IconCar.png" 
-      alt="Lái xe thực chiến Mr Năm"
+      alt="Đào tạo lái xe khôi việt - Thầy Năm "
       className="w-full h-full object-contain"
     />
   </div>
