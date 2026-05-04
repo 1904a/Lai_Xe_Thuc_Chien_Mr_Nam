@@ -19,18 +19,29 @@ export default function ContactForm({ courseName, showContentInput = false }: Fo
     e.preventDefault();
     setIsSubmitting(true);
 
+    // 1. Lưu vào Supabase
     const { error } = await supabase
-      .from("Registrator") // Dùng chung bảng với các form kia
-      .insert([
-        { 
-          name: name, 
-          tel: tel, 
-          course: courseName, 
-          content: userNote // Gửi nội dung người dùng đã nhập lên cột content
-        }
-      ]);
+      .from("Registrator")
+      .insert([{ 
+        name: name, 
+        tel: tel, 
+        course: courseName, 
+        content: userNote 
+      }]);
 
     if (!error) {
+      // 2. Gửi Email thông báo (Gửi đồng thời)
+      await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: name,
+          tel: tel,
+          course: courseName,
+          content: userNote,
+        }),
+      });
+
       router.push("/RegisteredSuccessfully");
     } else {
       alert("Lỗi khi đăng ký: " + error.message);
