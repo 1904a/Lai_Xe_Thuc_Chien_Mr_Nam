@@ -11,29 +11,40 @@ export default function GeneralContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const router = useRouter();
 
-  const handleSubmit = async (e: React.FormEvent) => {
+const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
     if (!course) {
       alert("Vui lòng chọn khóa học!");
       return;
     }
+
     setIsSubmitting(true);
 
-    const { error } = await supabase
-      .from("Registrator") // Dùng chung bảng với các form kia
-      .insert([
-        { 
-          name: name, 
-          tel: tel, 
-          course: course, // Lấy từ giá trị select
-          content: content  // Lấy từ giá trị textarea
-        }
-      ]);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json", // 🔥 QUAN TRỌNG
+        },
+        body: JSON.stringify({
+          name,
+          tel,
+          course,
+          content,
+        }),
+      });
 
-    if (!error) {
+      const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data.error || "Có lỗi xảy ra");
+      }
+
       router.push("/RegisteredSuccessfully");
-    } else {
-      alert("Lỗi khi đăng ký: " + error.message);
+    } catch (err: any) {
+      console.error(err);
+      alert("Lỗi: " + err.message);
       setIsSubmitting(false);
     }
   };

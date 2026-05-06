@@ -16,27 +16,33 @@ export default function ContactForm({ courseName, showContentInput = false }: Fo
   const router = useRouter();
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+  e.preventDefault();
+  setIsSubmitting(true);
 
-    const { error } = await supabase
-      .from("Registrator") // Dùng chung bảng với các form kia
-      .insert([
-        { 
-          name: name, 
-          tel: tel, 
-          course: courseName, 
-          content: userNote // Gửi nội dung người dùng đã nhập lên cột content
-        }
-      ]);
+  try {
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      body: JSON.stringify({
+        name,
+        tel,
+        course: courseName,
+        content: userNote,
+      }),
+    });
 
-    if (!error) {
+    const data = await res.json();
+
+    if (res.ok) {
       router.push("/RegisteredSuccessfully");
     } else {
-      alert("Lỗi khi đăng ký: " + error.message);
+      alert(data.error);
       setIsSubmitting(false);
     }
-  };
+  } catch (err) {
+    alert("Lỗi mạng");
+    setIsSubmitting(false);
+  }
+};
 
   return (
     <form onSubmit={handleSubmit} className="space-y-5 text-left">
