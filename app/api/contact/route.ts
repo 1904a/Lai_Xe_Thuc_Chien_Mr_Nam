@@ -44,7 +44,7 @@ export async function POST(req: Request) {
     // 4. Gửi mail
     await transporter.sendMail({
       from: process.env.GMAIL_USER,
-      to: process.env.GMAIL_USER,
+      to: "namnv136th@gmail.com",
       subject: "🚗 Có khách đăng ký mới",
       html: `
         <h2>📥 Có khách đăng ký mới</h2>
